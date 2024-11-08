@@ -1,3 +1,5 @@
+package model;
+
 public class Drink {
     String drinkName;
     public Drink() {
@@ -6,13 +8,13 @@ public class Drink {
         this.drinkName = drinkName;
     }
 
-    void orderADrink() {
+    public void orderADrink() {
         //Mô tả chi tiết cách mà mệnh lệnh hoạt động
-        System.out.println("Thực hiện mệnh lệnh 1: Đặt đồ uống " + drinkName);
+        System.out.println("Thực hiện mệnh lệnh: Đặt đồ uống " + drinkName);
     }
-    void cancelADrink() {
+    public void cancelADrink() {
         //Mô tả chi tiết cách mà mệnh lệnh hoạt động
-            System.out.println("Thực hiện mệnh lệnh 2: Huỷ đặt đồ uống " +  drinkName);
+            System.out.println("Thực hiện mệnh lệnh: Huỷ đặt đồ uống " +  drinkName);
         }
 }
 

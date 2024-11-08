@@ -1,6 +1,10 @@
+package command;
+
+import model.Drink;
+
 public class OderADrink implements Command {
     // Lớp OrderADrink thực hiện quá trình gọi đồ uống
-    Drink drink = new Drink();
+        Drink drink = new Drink();
 
     public OderADrink(Drink drink) {
         this.drink = drink;
@@ -12,4 +16,4 @@ public class OderADrink implements Command {
     }
 }
 
-// Đây là ConcreteCommand : ‘mệnh  lệnh’ sẽ triển khai lớp trừu tượng Command. Ghi đè execute()
+// Đây là ConcreteCommand : ‘mệnh  lệnh’ sẽ triển khai lớp trừu tượng command.Command. Ghi đè execute()

@@ -1,6 +1,11 @@
+package controller;
+
+import command.Command;
+
 public class HighLandApp {
      private Command commandOrderADrink;
      private Command commandCancelOrderADrink;
+     private Command commandViewMenu;
      public HighLandApp(Command commandOrderADrink, Command commandCancelOrderADrink) {
          this.commandCancelOrderADrink = commandCancelOrderADrink;
          this.commandOrderADrink = commandOrderADrink;
@@ -14,20 +19,23 @@ public class HighLandApp {
          commandCancelOrderADrink.execute();
      }
 
+     public void clickViewMenu(){
+         commandViewMenu.execute();
+     }
 
-//•	Invoker : tiếp nhận những “mệnh lệnh của khách hàng” (Client) và gọi execute() của ConcreteCommand để thực thi mệnh lệnh.
-
-
-
-
-
+//•	Invoker : tiếp nhận những “mệnh lệnh của khách hàng” (view.Client) và gọi execute() của ConcreteCommand đ0ể thực thi mệnh lệnh.
 
 
 
 
 
 
-    // Các phương thức settẻ để thay đổi Command cho hành động gọi và hủy món khác nhau
+
+
+
+
+
+    // Các phương thức settẻ để thay đổi command.Command cho hành động gọi và hủy món khác nhau
     public void setCommandOrderADrink(Command commandOrderADrink) {
         this.commandOrderADrink = commandOrderADrink;
     }
